@@ -1,0 +1,170 @@
+body{
+    background-color: whitesmoke;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#header{
+    overflow: hidden;
+}
+
+#title{
+    float: left;
+    margin-top: 50px;
+    padding: 10px;
+    height: 250px;
+}
+#category{
+    float: right;
+    width: 171px;
+    height: 300px;
+}
+#title p{
+    font-size: xx-small;
+}
+
+.circle_border{
+    border-radius: 5%;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+#top_nav{
+    margin-top: 100px;
+    padding: 8px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgb(210, 210, 210);
+    line-height: 25px;
+}
+
+.nav_name{
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+
+
+#category{
+    font-size: 12px;
+    font-family: 돋움;
+}
+#category ul li{
+    margin: 0 0 1px;
+    padding: 5px 0;
+    list-style-type: none;
+    overflow: hidden;
+    zoom: 1;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+#category ul li{
+    margin-bottom: -5px;
+}
+
+#category ul li img.listimage{
+    float: left;
+}
+
+#category .listimage{
+    background-image: url(0003_arw.gif);
+    width: 10px;
+    height: 12px;
+    margin: 1px 2px -2px 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
+li{
+    display: list-item;
+}
+
+a.on{
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+    
+}
+a:active{
+    color: rgb(108, 108, 108);
+}
+
+.cm_block{
+    margin: 14px;
+}
+
+.cm_head{
+    font-weight: bold;
+}
+.cm_con{
+    margin-left: -40px;
+}
+
+.main_color{
+    color: rgb(108, 108, 108);
+}  
+
+
+
+.main_text_style{
+    font-family: 돋움, 굴림, seoul, verdana, arial;
+}
+
+.date_text_style{
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    font-style: inherit;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+#section{
+    margin-top: 70px;
+    padding: 5px;
+}
+
+.copyright{
+    padding: 25px;
+}
+
+#footer p{
+    text-align: center;
+    font-size: 0.75em;
+    color: #9b9b9b;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#bottom_nav{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: rgb(210, 210, 210);
+}
+
+#bottom_nav .sep:before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 0 9px;
+    background-color: #b2b2b2;
+    vertical-align: middle;
+}
+
+#bottom_nav p > a:nth-child(2){
+   font-size: 11px;
+}
+
+
+
