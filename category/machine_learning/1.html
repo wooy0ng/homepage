@@ -3,9 +3,17 @@
     <head>
         <title>wooy0ng</title>
         <link rel="stylesheet" href="../../css/style.css">
+        <script src="../../script/script_01.js"></script>
         <style>
-            
+            #btn_nav{
+                margin-top: 8px;
+                height: 50px;
+            }
+
         </style>
+        <script>
+            
+        </script>
     </head>
 
     <body>
@@ -61,7 +69,18 @@
                     <span class="nav_name">머신 러닝 개요</span>
                     <span class="date_text_style">2021. 11. 16</span>
                 </div>
-                
+            </div>
+            <div id="btn_nav">
+                <span id="prev_btn" class="date_text_style main_color" style="float: left;">
+                    <a id="prev_post_title" class="on" href="javascript:void(0);" onclick="goPrevUrl();">
+                        ◀ 이전 포스트
+                    </a>
+                </span>
+                <span id="next_btn" class="date_text_style main_color" style="float: right;">
+                    <a id="next_post_title" class="on" href="javascript:void(0);" onclick="goNextUrl();">
+                        다음 포스트 ▶
+                    </a>
+                </span>
             </div>
             
             <div id="section">
