@@ -11,7 +11,7 @@ function getPrevUrl(){
         idx = Number(idx) - 1;
         if(idx){
             dir.push(String(idx) + '.html');
-            var result = dir.join('/');
+            var result = dir;
         } else{
             var result = "None";
         }
@@ -30,7 +30,7 @@ function getNextUrl(){
         idx = Number(idx) + 1;
         if(idx){
             dir.push(String(idx) + '.html');
-            var result = dir.join('/');
+            var result = dir;
         } else{
             var result = "None";
         }
