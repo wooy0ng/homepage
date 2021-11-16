@@ -4,7 +4,7 @@ function getPrevUrl(){
     var dir = url.split('/');
     dir.splice(0, 3);
     var idx = dir.pop().split('.')[0];
-    if(idx == 'index'){
+    if((idx == 'index') || (idx == '')){
         var result = "None";
     }
     else{
@@ -22,7 +22,7 @@ function getNextUrl(){
     var dir = url.split('/');
     dir.splice(0, 3);
     var idx = dir.pop().split('.')[0];
-    if(idx == 'index'){
+    if((idx == 'index') || (idx == '')){
         var result = "None";
     }
     else{
@@ -49,15 +49,14 @@ function checkFileExists(url){
 
 function goPrevUrl(){
     var url = getPrevUrl();
-    if(url != 'None'){
+    if(url != "None"){
         location.href = url;
     }
-    
 }
 
 function goNextUrl(){
     var url = getNextUrl();
-    if(url != 'None'){
+    if(url != "None"){
         location.href = url;
     }
     else if(checkFileExists(url)){
