@@ -10,8 +10,7 @@ function getPrevUrl(){
     else{
         idx = Number(idx) - 1;
         if(idx){
-            dir.push(String(idx) + '.html');
-            var result = dir;
+            var result = String(idx) + '.html';
         } else{
             var result = "None";
         }
@@ -29,8 +28,7 @@ function getNextUrl(){
     else{
         idx = Number(idx) + 1;
         if(idx){
-            dir.push(String(idx) + '.html');
-            var result = dir;
+            var result = String(idx) + '.html';
         } else{
             var result = "None";
         }
