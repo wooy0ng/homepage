@@ -1,2 +1,4 @@
 # homepage
-all copyright by wooy0ng
+
+
+ⓒ All copyright by wooy0ng
