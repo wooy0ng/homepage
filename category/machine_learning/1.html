@@ -4,11 +4,14 @@
         <title>wooy0ng</title>
         <link rel="stylesheet" href="../../css/style.css">
         <script src="../../script/script_01.js"></script>
+        <script type="text/javascript" src="../../script/jquery-1.11.3.min.js"></script>
         <style>
 
         </style>
         <script>
-            
+            $(document).ready(function(){
+                $("#board_wrap").load("menu.html")
+            })
         </script>
     </head>
 
@@ -66,6 +69,9 @@
                     </div>
                 </div>
             </div>
+
+            <div id="board_wrap"></div>
+
             <div id="top_nav" class="main_color">
                 <div id="nav_block">
                     <span class="nav_name">머신 러닝 개요</span>
