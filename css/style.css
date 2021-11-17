@@ -213,3 +213,25 @@ a:active{
     text-align: right;
 }
 
+.board_btns{
+    margin-top: 20px;
+    text-align: center;
+}
+.board_btns a{
+    
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid rgb(210 , 210, 210);
+    line-height: 100%;
+}
+.board_btns .num{
+    padding-top: 4px;
+    font-size: 12px;
+}
+.board_btns .num.click{
+    border-color: rgb(190 , 190, 190);
+    background-color: rgb(190 , 190, 190);
+    color: whitesmoke;
+}
