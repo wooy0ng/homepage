@@ -49,17 +49,14 @@ function checkFileExists(url){
 
 function goPrevUrl(){
     var url = getPrevUrl();
-    if(url != "None"){
+    if(checkFileExists(url)){
         location.href = url;
     }
 }
 
 function goNextUrl(){
     var url = getNextUrl();
-    if(url != "None"){
-        location.href = url;
-    }
-    else if(checkFileExists(url)){
+    if(checkFileExists(url)){
         location.href = url;
     }
 }
