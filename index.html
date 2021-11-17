@@ -9,7 +9,10 @@
 
         </style>
         <script>
-            
+            $(document).ready(function(){
+                $("category_wrap").load("_category.html")
+                $("#board_wrap").load("menu.html")
+            })
         </script>
     </head>
 
@@ -31,41 +34,7 @@
                     </a>
                     
                 </div>
-                
-                <div id="category" class="circle_border">
-                    <div class="cm_block main_color">
-                        <div class="cm_head">
-                            <span>category</span>
-                        </div>
-                        <div class="cm_body">
-                            <div class="cm_con">
-                                <ul>
-                                    <li class="parent_category">
-                                        <div class="parent_category_name">
-                                            <span>인공지능</span>
-                                        </div>
-                                    </li>
-                                    <li class="child_category">
-                                        <img src="image/spc.gif" width="1" height="1" alt class="listimage">
-                                        <div class="to_link">
-                                            <a class="on" href="category/machine_learning/3.html">
-                                                머신 러닝
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="child_category">
-                                        <img src="image/spc.gif" width="1" height="1" alt class="listimage">
-                                        <div class="to_link">
-                                            <a class="on" href="#">
-                                                딥 러닝
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="category_wrap"></div>
             </div>
             
             <div id="board_wrap"></div>
