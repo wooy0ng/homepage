@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wooy0ng</title>
+        <link rel="stylesheet" href="../../css/style.css">
+        <script src="../../script/script_01.js"></script>
+        <script type="text/javascript" src="../../script/jquery-1.11.3.min.js"></script>
+        <style>
+
+        </style>
+        <script>
+            $(document).ready(function(){
+                $("#category_wrap").load("category.html")
+                $("#board_wrap").load("menu.html")
+            })
+        </script>
+    </head>
+
+    <body>
+        <div id="whole-body">
+            <div id="top_area">
+                
+            </div>
+            <div id="header">
+                <div id="title">
+                    <a href="https://wooy0ng.github.io/homepage/" class="on">
+                        <h1>우용이 블로그</h1>
+                    </a>
+                    <a href="https://blog.naver.com/yygg9800/222570160043" class="on">
+                        <p>https://blog.naver.com/yygg9800</p>
+                    </a>
+                    <a href="https://wooy0ng.github.io/homepage" class="on">
+                        <p>https://wooy0ng.github.io/homepage</p>
+                    </a>
+                </div>
+                <div id="category_wrap"></div>
+            </div>
+
+            <div id="board_wrap"></div>
+
+            <div id="top_nav" class="main_color">
+                <div id="nav_block">
+                    <span class="nav_name">선형 회귀 알고리즘 / 경사 하강법</span>
+                    <span class="date_text_style">2021. 11. 16</span>
+                </div>
+            </div>
+            <div id="btn_nav">
+                <span id="prev_btn" class="date_text_style main_color" style="float: left;">
+                    <a id="prev_post_title" class="on" href="javascript:void(0);" onclick="goPrevUrl();">
+                        ◀ 이전 포스트
+                    </a>
+                </span>
+                <span id="next_btn" class="date_text_style main_color" style="float: right;">
+                    <a id="next_post_title" class="on" href="javascript:void(0);" onclick="goNextUrl();">
+                        다음 포스트 ▶
+                    </a>
+                </span>
+            </div>
+            
+            <div id="section">
+                <h2>선형 회귀 알고리즘 / 경사 하강법</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique augue sed est ornare auctor. Ut pulvinar consequat finibus. Aenean id porttitor ipsum. Fusce ultricies nibh et sem suscipit interdum. Suspendisse a dictum justo. Mauris sodales vitae ex sit amet porta. Ut leo augue, sagittis feugiat enim eleifend, porta porta lorem. Integer suscipit, tellus eu convallis viverra, lacus arcu semper sapien, tempus pellentesque erat magna id massa. Nunc faucibus nisl in lectus posuere rhoncus. Ut vitae purus ac augue vestibulum dictum ac et lacus. Nulla vitae leo lacus. Sed sed ullamcorper lacus, eget consequat diam. Nullam blandit tortor eget nisl vestibulum elementum.
+                    Maecenas volutpat turpis eget tellus fermentum, vel pretium tellus dignissim. Etiam tincidunt elementum tristique. Fusce fermentum quam sed magna faucibus vehicula. Quisque ligula eros, luctus at vehicula in, pharetra in nisi. Aenean cursus tortor orci, vel egestas odio maximus non. Sed non nisi ac augue suscipit convallis. Nulla quis justo efficitur, convallis urna nec, commodo est. Sed eu eleifend purus, quis finibus odio. Sed accumsan nisl elit, at tempus turpis posuere et. Nulla volutpat odio varius, placerat metus eleifend, dictum urna. Suspendisse in nisi sit amet urna luctus tincidunt eu at diam. Ut dui dui, imperdiet ac sollicitudin at, sodales fermentum dolor. Morbi magna urna, tempor ut tellus finibus, efficitur porttitor lacus. Nunc pretium nunc in lorem elementum tristique. In hac habitasse platea dictumst. Maecenas maximus vitae eros eget tincidunt.
+                    Integer porta vestibulum enim, quis finibus nibh. Aliquam at odio tincidunt, lobortis ex id, aliquet arcu. Nullam nec massa nec enim tincidunt dignissim. Suspendisse justo orci, interdum quis facilisis sit amet, ultricies vel enim. Nullam vel odio sit amet ex gravida blandit eu a nulla. Integer euismod scelerisque viverra. Sed vulputate pretium mi, nec auctor ex volutpat at. Mauris consectetur purus sed mauris lacinia egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nec vestibulum magna. Vestibulum et urna placerat, egestas leo sit amet, gravida tellus.
+                    Proin vehicula, est quis posuere rhoncus, augue metus dapibus nisi, imperdiet egestas magna purus vitae nunc. Nam consequat, lorem tristique hendrerit semper, nibh orci fringilla ipsum, vel congue ipsum metus non nisi. Integer varius placerat eros, vitae fermentum leo accumsan a. Donec vitae nisl condimentum felis dapibus egestas nec eget massa. Proin malesuada cursus urna. Nam eget est bibendum, fermentum dui sed, vulputate turpis. Fusce rutrum vestibulum velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium luctus massa, sed placerat neque consectetur vitae. Proin dictum arcu ut sem faucibus maximus. Nam pharetra nec orci at ullamcorper. Ut fringilla urna erat, a vulputate lacus bibendum quis.
+                    Duis maximus nisi sit amet nisl pharetra, ut bibendum velit sodales. Vestibulum ut accumsan ex, non imperdiet nisl. Praesent sit amet ante vel lectus tempus vestibulum vel at magna. Duis elementum sapien et nisi porta, eu placerat quam dictum. Morbi fermentum mauris tortor, vitae convallis eros malesuada vel. Pellentesque eu imperdiet lectus. Duis pharetra viverra justo nec hendrerit. Praesent sit amet vehicula nibh.</p>
+            </div>
+
+            <div id="footer">
+                <div id="bottom_nav">
+                    <p class="copyright">
+                        ⓒ All CopyRight By 
+                        <a href="../../index.html" class="on">wooy0ng</a>
+                        <a class="sep on" href="https://blog.naver.com/yygg9800/222570160043">
+                            관리자</a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
