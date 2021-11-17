@@ -169,5 +169,47 @@ a:active{
    font-size: 11px;
 }
 
+.board_title{
+    font-weight: bold;
+    margin: 100px 0 10px 5px;
+}
+.board_list{
+    padding-left: 5px;
+    padding-right: 10px;
+}
 
+.board_list > div {
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+.board_list > div:last-child{
+    border-bottom: 1px solid rgb(108, 108, 108);
+}
+.board_list .top{
+    font-weight: 600;
+    border-bottom: 1px solid rgb(108, 108, 108);
+}
+.board_list > div{
+    height: 35px;
+    vertical-align: middle;
+}
+
+.board_list > div > div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.board_list .num{
+    width: 7%;
+}
+.board_list .title{
+    width: 75%;
+    text-align: left;
+}
+.board_list .date{
+    width: 15%;
+    text-align: right;
+}
 
