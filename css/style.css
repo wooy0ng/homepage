@@ -91,6 +91,9 @@ a.on{
     text-decoration: none;
     
 }
+a.line_on{
+    color: rgb(108, 108, 108);
+}
 a:active{
     color: rgb(108, 108, 108);
 }
