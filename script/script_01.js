@@ -61,18 +61,6 @@ function goNextUrl(){
     }
 }
 
-function getPrevUrlTitle(){
-    // To Do : dynamic title
-    const request = require('request'),
-        cheerio = require('cheerio');
-    var url = getPrevUrl();
-
-    request(url, function(err, res, html){
-        if(!err){
-            var $ = cheerio.load(html)  
-        }
-    })
-}
 
 function goPrevMenu(){
     var url_num = Number(document.getElementsByClassName("click")[0].text);
@@ -91,6 +79,16 @@ function goNextMenu(){
     if(checkFileExists(next_url)){
         $(document).ready(function(){
             $("#board_wrap").load(next_url)
+        })
+    }
+}
+
+function goClickedMenu(btn_num){
+    var url_num = Number(document.getElementById(btn_num).text);
+    var clicked_url = "menu/" + String(url_num) + ".html"
+    if(checkFileExists(clicked_url)){
+        $(document).ready(function(){
+            $("#board_wrap").load(clicked_url)
         })
     }
 }
