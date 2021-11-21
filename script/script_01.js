@@ -92,3 +92,8 @@ function goClickedMenu(btn_num){
         })
     }
 }
+
+function goNNextMenu(){
+    var last_num = document.getElementsByClassName('btn').last()
+
+}
