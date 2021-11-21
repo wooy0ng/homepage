@@ -65,35 +65,57 @@ function goNextUrl(){
 function goPrevMenu(){
     var url_num = Number(document.getElementsByClassName("click")[0].text);
     var prev_url_num = url_num - 1;
-    var prev_url = "menu/" +String(prev_url_num) + ".html"
+    var prev_url = "menu/" +String(prev_url_num) + ".html";
     if(checkFileExists(prev_url)){
         $(document).ready(function(){
-            $("#board_wrap").load(prev_url)
-        })
+            $("#board_wrap").load(prev_url);
+        });
     }
 }
 function goNextMenu(){
     var url_num = Number(document.getElementsByClassName("click")[0].text);
     var next_url_num = url_num + 1;
-    var next_url = "menu/" + String(next_url_num) + ".html"
+    var next_url = "menu/" + String(next_url_num) + ".html";
     if(checkFileExists(next_url)){
         $(document).ready(function(){
-            $("#board_wrap").load(next_url)
-        })
+            $("#board_wrap").load(next_url);
+        });
     }
 }
 
 function goClickedMenu(btn_num){
     var url_num = Number(document.getElementById(btn_num).text);
-    var clicked_url = "menu/" + String(url_num) + ".html"
+    var clicked_url = "menu/" + String(url_num) + ".html";
     if(checkFileExists(clicked_url)){
         $(document).ready(function(){
-            $("#board_wrap").load(clicked_url)
-        })
+            $("#board_wrap").load(clicked_url);
+        });
+    }
+}
+function getPPrevMenu(){
+    var btns = document.getElementsByClassName('btn');
+    var first_num = Number(btns[0].text);
+    if(first_num % 5 == 1){
+        var pprev_num = first_num - 5;
+        var pprev_url = "menu/" + String(pprev_num) + ".html";
+        if(checkFileExists(clicked_url)){
+            $(document).ready(function(){
+                $("#board_wrap").load(pprev_url);
+            });
+        }
     }
 }
 
 function goNNextMenu(){
-    var last_num = document.getElementsByClassName('btn').last()
-
+    var btns = document.getElementsByClassName('btn');
+    var last_num = Number(btns[btns.length - 1].text);
+    if(last_num % 5 == 0){
+        var nnext_num = last_num + 1;
+        var nnext_url = "menu/" + String(nnext_num) + ".html";
+        if(checkFileExists(clicked_url)){
+            $(document).ready(function(){
+                $("#board_wrap").load(nnext_url);
+            });
+        }
+    }
 }
