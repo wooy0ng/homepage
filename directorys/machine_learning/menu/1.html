@@ -5,8 +5,28 @@
         <script src="../../../script/script_01.js"></script>
         <script type="text/javascript" src="../../../script/jquery-1.11.3.min.js"></script>
         <script>
+            function goPrevMenu(){
+                var url_num = Number(document.getElementsByClassName("click")[0].text);
+                prev_url_num = url_num - 1;
+                prev_url = "menu/" +String(prev_url_num) + ".html"
+                if(checkFileExists(prev_url)){
+                    $(document).ready(function(){
+                        $("#board_wrap").load(prev_url)
+                    })
+                }
+            }
+            function goNextMenu(){
+                var url_num = Number(document.getElementsByClassName("click")[0].text);
+                next_url_num = url_num + 1;
+                next_url = "menu/" + String(next_url) + ".html"
+                if(checkFileExists(next_url)){
+                    $(document).ready(function(){
+                        $("#board_wrap").load(next_url)
+                    })
+                }
+            }
             
-
+            
 
         </script>
 
@@ -15,19 +35,19 @@
         <div id="category_list">
                 <div class="board_list main_color">
                     <div class="top">
-                        <div class=num>번호</div>
+                        <div class="num">번호</div>
                         <div class="title">제목</div>
                         <div class="date">작성일</div>
                     </div>
                     <div>
-                        <div class=num>1</div>
+                        <div class="num">1</div>
                         <div class="title">
                             <a href="1.html#board_wrap" class="on">머신 러닝 개요</a>
                         </div>
                         <div class="date">2021.11.16</div>
                     </div>
                     <div>
-                        <div class=num>2</div>
+                        <div class="num">2</div>
                         <div class="title">
                             <a href="2.html#board_wrap" class="on">선형 회귀 알고리즘 / 개념</a>
                             
@@ -35,21 +55,21 @@
                         <div class="date">2021.11.16</div>
                     </div>
                     <div>
-                        <div class=num>3</div>
+                        <div class="num">3</div>
                         <div class="title">
                             <a href="3.html#board_wrap" class="on">선형 회귀 알고리즘 / 경사 하강법</a>
                         </div>
                         <div class="date">2021.11.16</div>
                     </div>
                     <div>
-                        <div class=num>4</div>
+                        <div class="num">4</div>
                         <div class="title">
                             <a href="#" class="on">다중 선형 회귀 알고리즘 / 개념</a>
                         </div>
                         <div class="date">2021.11.16</div>
                     </div>
                     <div>
-                        <div class=num>5</div>
+                        <div class="num">5</div>
                         <div class="title">
                             <a href="#" class="on">다중 선형 회귀 알고리즘 / 경사 하강법</a>
                         </div>
@@ -59,15 +79,15 @@
             </div>
 
             <div class="board_btns">
-                <a href="#" class="num on">《</a>
-                <a href="javascript:void(0)" class="num on" onclick="goPrevUrl();">〈</a>
-                <a href="#" class="num on click">1</a>
-                <a href="#" class="num on ">2</a>
-                <a href="#" class="num on">3</a>
-                <a href="#" class="num on">4</a>
-                <a href="#" class="num on">5</a>
-                <a href="javascript:void(0)" class="num on" onclick="goNextUrl();">〉</a>
-                <a href="#" class="num on">》</a>
+                <a href="#" id="btn_pprev" class="num on">《</a>
+                <a href="#" id="btn_prev" class="num on">〈</a>
+                <a href="#" id="btn_1" class="num on click">1</a>
+                <a href="#" id="btn_2" class="num on ">2</a>
+                <a href="#" id="btn_3" class="num on">3</a>
+                <a href="#" id="btn_4" class="num on">4</a>
+                <a href="#" id="btn_5" class="num on">5</a>
+                <a href="#" id="btn_next" class="num on">〉</a>
+                <a href="#" id="btn_nnext" class="num on">》</a>
             </div>
     </body>
 </html>
