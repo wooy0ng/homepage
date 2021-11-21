@@ -98,7 +98,7 @@ function getPPrevMenu(){
     if(first_num % 5 == 1){
         var pprev_num = first_num - 5;
         var pprev_url = "menu/" + String(pprev_num) + ".html";
-        if(checkFileExists(clicked_url)){
+        if(checkFileExists(pprev_url)){
             $(document).ready(function(){
                 $("#board_wrap").load(pprev_url);
             });
@@ -112,7 +112,7 @@ function goNNextMenu(){
     if(last_num % 5 == 0){
         var nnext_num = last_num + 1;
         var nnext_url = "menu/" + String(nnext_num) + ".html";
-        if(checkFileExists(clicked_url)){
+        if(checkFileExists(nnext_url)){
             $(document).ready(function(){
                 $("#board_wrap").load(nnext_url);
             });
