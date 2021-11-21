@@ -92,7 +92,7 @@ function goClickedMenu(btn_num){
         });
     }
 }
-function getPPrevMenu(){
+function goPPrevMenu(){
     var btns = document.getElementsByClassName('btn');
     var first_num = Number(btns[0].text);
     if(first_num % 5 == 1){
