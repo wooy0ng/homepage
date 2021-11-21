@@ -50,14 +50,14 @@ function checkFileExists(url){
 function goPrevUrl(){
     var url = getPrevUrl();
     if(checkFileExists(url)){
-        location.href = url;
+        location.href = url + "#board_wrap";
     }
 }
 
 function goNextUrl(){
     var url = getNextUrl();
     if(checkFileExists(url)){
-        location.href = url;
+        location.href = url + "#board_wrap";
     }
 }
 
