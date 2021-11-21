@@ -73,3 +73,24 @@ function getPrevUrlTitle(){
         }
     })
 }
+
+function goPrevMenu(){
+    var url_num = Number(document.getElementsByClassName("click")[0].text);
+    prev_url_num = url_num - 1;
+    prev_url = "menu/" +String(prev_url_num) + ".html"
+    if(checkFileExists(prev_url)){
+        $(document).ready(function(){
+            $("#board_wrap").load(prev_url)
+        })
+    }
+}
+function goNextMenu(){
+    var url_num = Number(document.getElementsByClassName("click")[0].text);
+    next_url_num = url_num + 1;
+    next_url = "menu/" + String(next_url) + ".html"
+    if(checkFileExists(next_url)){
+        $(document).ready(function(){
+            $("#board_wrap").load(next_url)
+        })
+    }
+}
