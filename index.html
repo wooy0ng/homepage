@@ -6,12 +6,10 @@
         <script src="script/script_01.js"></script>
         <script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
         <style>
-
-        </style>
-        <script>
             
+        </style>
 
-
+        <script>
             $(document).ready(function(){
                 $("#category_wrap").load("category.html")
             })
@@ -44,10 +42,14 @@
 
             <div id="top_nav" class="main_color">
                 <div id="nav_block">
-                    <span class="nav_name">최근 포스트</span>
-                    <span class="date_text_style">2021. 11. 16</span>
+                    <span class="nav_name">프로필</span>
+                    <span class="date_text_style"></span>
+                    <a href="https://hits.seeyoufarm.com" style="float:right;">
+                        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwooy0ng.github.io%2Fhomepage%2F&count_bg=%237E818E&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+                    </a>
                 </div>
             </div>
+            <!--
             <div id="btn_nav">
                 <span id="prev_btn" class="date_text_style main_color" style="float: left;">
                     <a id="prev_post_title" class="move_btn on" href="javascript:void(0);" onclick="goPrevUrl();">
@@ -60,17 +62,87 @@
                     </a>
                 </span>
             </div>
+            -->
             
             <div id="section">
-                <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique augue sed est ornare auctor. Ut pulvinar consequat finibus. Aenean id porttitor ipsum. Fusce ultricies nibh et sem suscipit interdum. Suspendisse a dictum justo. Mauris sodales vitae ex sit amet porta. Ut leo augue, sagittis feugiat enim eleifend, porta porta lorem. Integer suscipit, tellus eu convallis viverra, lacus arcu semper sapien, tempus pellentesque erat magna id massa. Nunc faucibus nisl in lectus posuere rhoncus. Ut vitae purus ac augue vestibulum dictum ac et lacus. Nulla vitae leo lacus. Sed sed ullamcorper lacus, eget consequat diam. Nullam blandit tortor eget nisl vestibulum elementum.
-                    Maecenas volutpat turpis eget tellus fermentum, vel pretium tellus dignissim. Etiam tincidunt elementum tristique. Fusce fermentum quam sed magna faucibus vehicula. Quisque ligula eros, luctus at vehicula in, pharetra in nisi. Aenean cursus tortor orci, vel egestas odio maximus non. Sed non nisi ac augue suscipit convallis. Nulla quis justo efficitur, convallis urna nec, commodo est. Sed eu eleifend purus, quis finibus odio. Sed accumsan nisl elit, at tempus turpis posuere et. Nulla volutpat odio varius, placerat metus eleifend, dictum urna. Suspendisse in nisi sit amet urna luctus tincidunt eu at diam. Ut dui dui, imperdiet ac sollicitudin at, sodales fermentum dolor. Morbi magna urna, tempor ut tellus finibus, efficitur porttitor lacus. Nunc pretium nunc in lorem elementum tristique. In hac habitasse platea dictumst. Maecenas maximus vitae eros eget tincidunt.
-                    Integer porta vestibulum enim, quis finibus nibh. Aliquam at odio tincidunt, lobortis ex id, aliquet arcu. Nullam nec massa nec enim tincidunt dignissim. Suspendisse justo orci, interdum quis facilisis sit amet, ultricies vel enim. Nullam vel odio sit amet ex gravida blandit eu a nulla. Integer euismod scelerisque viverra. Sed vulputate pretium mi, nec auctor ex volutpat at. Mauris consectetur purus sed mauris lacinia egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nec vestibulum magna. Vestibulum et urna placerat, egestas leo sit amet, gravida tellus.
-                    Proin vehicula, est quis posuere rhoncus, augue metus dapibus nisi, imperdiet egestas magna purus vitae nunc. Nam consequat, lorem tristique hendrerit semper, nibh orci fringilla ipsum, vel congue ipsum metus non nisi. Integer varius placerat eros, vitae fermentum leo accumsan a. Donec vitae nisl condimentum felis dapibus egestas nec eget massa. Proin malesuada cursus urna. Nam eget est bibendum, fermentum dui sed, vulputate turpis. Fusce rutrum vestibulum velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium luctus massa, sed placerat neque consectetur vitae. Proin dictum arcu ut sem faucibus maximus. Nam pharetra nec orci at ullamcorper. Ut fringilla urna erat, a vulputate lacus bibendum quis.
-                    Duis maximus nisi sit amet nisl pharetra, ut bibendum velit sodales. Vestibulum ut accumsan ex, non imperdiet nisl. Praesent sit amet ante vel lectus tempus vestibulum vel at magna. Duis elementum sapien et nisi porta, eu placerat quam dictum. Morbi fermentum mauris tortor, vitae convallis eros malesuada vel. Pellentesque eu imperdiet lectus. Duis pharetra viverra justo nec hendrerit. Praesent sit amet vehicula nibh.</p>
+                <div class="profile_wrap">
+                    <div>
+                        <table class="profile_table main_color">
+                            <tr>
+                                <td>
+                                    <div id="img_box">
+                                        <img id="profile_img" src="profile_img.jpg" alt="프로필_이미지">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h2 style="padding-left:12px;">@wooy0ng</h2></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <svg class="octicon octicon-location" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                Deagu, South Korea
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <svg class="octicon octicon-mail" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M1.75 2A1.75 1.75 0 000 3.75v.736a.75.75 0 000 .027v7.737C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75zM14.5 4.07v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81zm-13 1.74v6.441c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V5.809L8.38 9.397a.75.75 0 01-.76 0L1.5 5.809z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                yygg9800@naver.com
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link">
+                                                    <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                blog.naver.com/yygg9800
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <table class="profile_content main_color">
+                            <tr>
+                                <td>
+                                    안녕하세요👋🏻<br><br>
+                                    끊임없이 성장하는 우용이 블로그에 방문해주셔서 감사합니다.
+                                </td>
+                            </tr>
+
+                            <tr id="my_portfolio" style="height: 350px;">
+                                <td>
+                                    <ul>
+                                        <li>육군 정보보호병 만기 전역</li>
+                                        <li>한국언론진흥재단 영상 서포터즈 5기</li>
+                                        <li>프로그래머스 인공지능 데브코스 3기</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <div id="footer">
+                
                 <div id="bottom_nav">
                     <p class="copyright">
                         ⓒ All CopyRight By 
