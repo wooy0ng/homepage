@@ -281,7 +281,7 @@ a:active{
     margin-right: 5px;
 }
 .profile_table li div:first-child{
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 .profile_table li div:last-child{
     vertical-align: top;
