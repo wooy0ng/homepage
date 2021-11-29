@@ -254,7 +254,7 @@ a:active{
 }
 
 #profile{
-    height: 450px;
+    /*height: 450px;*/
     margin: 0 auto;
 }
 .profile_wrap > div{
