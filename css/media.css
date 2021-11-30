@@ -1,0 +1,93 @@
+/*computer*/
+@media screen and (max-width: 3080px){
+    body{
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #profile {
+        height: 450px;
+    }
+    .profile_wrap > div:last-child{
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    body{
+        width: 858px;
+    }
+    #profile{
+        height: 1000px;
+    }
+    .profile_wrap > div{
+        display: flex;
+        width: 850px;
+        justify-content: center;
+    }
+    .profile_wrap > div:last-child{
+        margin-left: 0px;
+    }
+}
+/*tablet 1024*/ 
+@media screen and (max-width: 1024px) {
+    #whole-body{
+        margin-right: 20%;
+    }
+    .profile_wrap > div{
+        display: flex;
+        width: 686px;
+        justify-content: center;
+    }
+    .profile_wrap > div:last-child{
+        margin-left: 0px;
+    }
+    #bottom_nav{
+        margin-right: 20%;
+    }
+}
+
+/*tablet 768*/ 
+@media screen and (max-width: 768px) {
+    body{
+        width: 602px;
+    }
+
+    #whole-body{
+        margin-right: 20%;
+    }
+    .profile_wrap > div{
+        display: flex;
+        width: 430px;
+        justify-content: center;
+    }
+    .profile_wrap > div:last-child{
+        margin-left: 0px;
+    }
+    #bottom_nav{
+        margin-right: 20%;
+    }
+}
+
+/*smart phone*/
+@media screen and (max-width: 450px){
+    body{
+        width: 225px;
+    }
+    #profile{
+        height: 500px;
+    }
+    #category_wrap{
+        display: flex;
+        width: 225px;
+        justify-content: center;
+    }
+    .profile_wrap > div{
+        display: flex;
+        width: 225px;
+        justify-content: center;
+    }
+    .profile_wrap > div:last-child{
+        display: none;
+    }
+}
