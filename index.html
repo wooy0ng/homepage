@@ -11,8 +11,16 @@
         <script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
 
         <style>
+            /*computer*/
             @media screen and (max-width: 3080px){
-                #profile {height: 450px;}
+                body{
+                    margin-top: 10%;
+                    margin-left: 20%;
+                    margin-right: 20%;
+                }
+                #profile {
+                    height: 450px;
+                }
                 .profile_wrap > div:last-child{
                     margin-left: 200px;
                 }
@@ -34,6 +42,25 @@
                     margin-left: 0px;
                 }
             }
+            /*tablet*/ 
+            @media screen and (max-width: 1024px) {
+                #whole-body{
+                    margin-right: 20%;
+                }
+                .profile_wrap > div{
+                    display: flex;
+                    width: 686px;
+                    justify-content: center;
+                }
+                .profile_wrap > div:last-child{
+                    margin-left: 0px;
+                }
+                #bottom_nav{
+                    margin-right: 20%;
+                }
+            }
+
+            /*smart phone*/
             @media screen and (max-width: 450px){
                 body{
                     width: 225px;
