@@ -53,9 +53,6 @@
         width: 602px;
     }
 
-    #whole-body{
-        margin-right: 20%;
-    }
     .profile_wrap > div{
         display: flex;
         width: 430px;
@@ -76,6 +73,10 @@
     }
     #profile{
         height: 500px;
+    }
+    
+    #whole-body{
+        margin-right: 0%;
     }
     #category_wrap{
         display: flex;
