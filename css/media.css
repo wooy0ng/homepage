@@ -11,6 +11,10 @@
     .profile_wrap > div:last-child{
         margin-left: 200px;
     }
+    #category{
+        width: 171px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 1500px){
@@ -77,6 +81,9 @@
     
     #whole-body{
         margin-right: 0%;
+    }
+    #category{
+        width: 250px;
     }
     #category_wrap{
         display: flex;
