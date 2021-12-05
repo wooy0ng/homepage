@@ -46,9 +46,6 @@
     .profile_wrap > div:last-child{
         margin-left: 0px;
     }
-    #bottom_nav{
-        margin-right: 20%;
-    }
 }
 
 /*tablet 768*/ 
@@ -65,9 +62,7 @@
     .profile_wrap > div:last-child{
         margin-left: 0px;
     }
-    #bottom_nav{
-        margin-right: 20%;
-    }
+
 }
 
 /*smart phone*/
