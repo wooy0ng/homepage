@@ -42,7 +42,16 @@
 .m_bottom_25{
     margin-bottom: 25%;
 }
-/* pont */
+/* padding */
+.p-left-5{
+    padding-left: 5px;
+}
+.p-right-10{
+    padding-right: 10px;
+}
+
+
+/* font */
 .font-10{
     font-size: 10px;
 }
@@ -52,3 +61,10 @@
 .font-14{
     font-size: 14px;
 }
+
+
+/* color */
+.gray-color{
+    color: rgb(108, 108, 108);
+}
+

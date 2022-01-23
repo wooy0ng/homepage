@@ -1,0 +1,67 @@
+a.on{
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+}
+
+.board_list{
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.board_list > div {
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+.board_list > div:last-child{
+    border-bottom: 1px solid rgb(108, 108, 108);
+}
+.board_list .top{
+    font-weight: 600;
+    border-bottom: 1px solid rgb(108, 108, 108);
+}
+.board_list > div{
+    height: 35px;
+    vertical-align: middle;
+}
+
+.board_list > div > div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.board_list .num{
+    width: 7%;
+}
+.board_list .title{
+    width: 75%;
+    text-align: left;
+}
+.board_list .date{
+    width: 15%;
+    text-align: right;
+}
+
+.board_btns{
+    margin-top: 20px;
+    text-align: center;
+}
+.board_btns a{
+    
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid rgb(210 , 210, 210);
+    line-height: 100%;
+}
+.board_btns .num{
+    padding-top: 4px;
+    font-size: 12px;
+}
+.board_btns .num.click{
+    border-color: rgb(190 , 190, 190);
+    background-color: rgb(190 , 190, 190);
+    color: whitesmoke;
+}

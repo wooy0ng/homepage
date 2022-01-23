@@ -28,7 +28,22 @@
             color: rgb(108, 108, 108);
         }
         
+        
+        
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#Code-Review-list").load("templates/Code-Review/list/1.html")
+        })
+        /*
+        function openClosebtn(){
+            if (document.getElementById('wrap-list-blind').style.display === 'block'){
+                document.getElementById('wrap-list-blind').style.display === 'none'
+                
+            }
+        }
+        */
+    </script>
 </head>
 <body>
     <!-- navbar -->
@@ -119,29 +134,14 @@
                                 </div>
                             </div>
                             <!-- table -->
-                            <!--
-                            <div class="row m_top_5">
-                                <div class="col">
-                                    <div class="table-responsive text-center">
-                                        <table class="table table-bordered table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <td>번호</td>
-                                                    <td>제목</td>
-                                                    <td>작성일</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>test</td>
-                                                    <td>2022.01.01</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                            <div class="list-table">
+                                <a href="#">
+                                    <span id="wrap-list-blind">목록열기</span>
+                                </a>
+                                <div id="Projects-list">
+
                                 </div>
-                            </div>-->
+                            </div>
 
                             <div class="row d-flex justify-content-center text-center m_top_5">
                                 <div class="col-xl-4">
@@ -181,6 +181,16 @@
                                     <h6>코드 리뷰</h6>
                                 </div>
                             </div>
+                            <!-- table -->
+                            <div class="list-table">
+                                <a href="#">
+                                    <span id="wrap-list-blind">목록열기</span>
+                                </a>
+                                <div id="Code-Review-list">
+
+                                </div>
+                            </div>
+
                             <div class="row d-flex justify-content-center text-center m_top_5">
                                 <div class="col-xl-4">
                                     <a href="templates/Code-Review/1.html"><img src="assets/image/work-img1.jpg" alt=""></a>
@@ -229,6 +239,7 @@
     </section>
 
     <script src="assets/js/responsive.js"></script>
+
     
 </body>
 </html>
