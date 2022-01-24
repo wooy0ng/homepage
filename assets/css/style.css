@@ -42,6 +42,16 @@
 .m_bottom_25{
     margin-bottom: 25%;
 }
+.m_bottom_30{
+    margin-bottom: 30%;
+}
+.m_bottom_35{
+    margin-bottom: 35%;
+}
+.m_bottom_40{
+    margin-bottom: 40%;
+}
+
 /* padding */
 .p-left-5{
     padding-left: 5px;
