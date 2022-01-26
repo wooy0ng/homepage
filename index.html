@@ -41,7 +41,8 @@
         <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
         <script>
             $(document).ready(function(){
-                $("#Code-Review-list").load("templates/Code-Review/tables/1.html")
+                $("#Code-Review-list").load("templates/Code-Review/tables/1.html");
+                $("#Projects-list").load("templates/Projects/tables/1.html");
             })
             /*
             function openClosebtn(){
@@ -142,16 +143,18 @@
                                 <!-- table -->
                                 <div class="row">
                                     <div class="col">
+                                        <div style="float: right; margin-right: 2px; margin-bottom: 3px;"> 
+                                            <a href="#" class="on">
+                                                <span id="wrap-list-blind" style="font-size: 14px;">목록열기</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
                                         <div class="list-table">
-                                            <div style="float: right;">
-                                                <a href="#" class="on">
-                                                    <span id="wrap-list-blind" style="font-size: 14px;">목록열기</span>
-                                                </a>
-                                            </div>
                                             <!-- table -->
-                                            <div>
-        
-                                            </div>
+                                            <div id="Projects-list"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -160,7 +163,7 @@
                                     <div class="col-xl-4">
                                         <a href="templates/Projects/1.html"><img src="assets/image/work-img1.jpg" alt=""></a>
                                         <div class="m_top_5">
-                                            <p>Malware Detector (ML)</p>
+                                            <p>test</p>
                                         </div>
                                     </div>
                                     
@@ -170,14 +173,13 @@
                                             2
                                         </div>
                                     </div>
-                                    <!--
+                                    
                                     <div class="col-md-4">
                                         <img src="assets/image/work-img3.jpg" alt="">
                                         <div class="m_top_5">
                                             3
                                         </div>
                                     </div>
-                                    -->
                                 </div>
                             </div>
                         </div>
@@ -217,7 +219,7 @@
                                     <div class="col-xl-4">
                                         <a href="templates/Code-Review/1.html"><img src="assets/image/work-img1.jpg" alt=""></a>
                                         <div class="m_top_5">
-                                            <p>Malware Detector (ML)</p>
+                                            <p>test</p>
                                         </div>
                                     </div>
                                     
